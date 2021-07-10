@@ -34,7 +34,7 @@ app.post('/register', (req, res) => {
     if (err) {
       return res.json({ success: false, err })
     }
-    // 성공
+    // 성공, 비밀번호 암호화
     else {
       return res.status(200).json({ success: true })
     }
