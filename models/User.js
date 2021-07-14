@@ -86,7 +86,7 @@ userSchema.methods.generateToken = function (cb) {
   var token = jwt.sign(user._id.toHexString(), 'secretToken')
   user.token = token
 
-  user.save(function (err, user) {
+  user.save((err, user) => {
     if (err) {
       return cb(err)
     }
@@ -94,7 +94,7 @@ userSchema.methods.generateToken = function (cb) {
   })
 }
 
-userSchema.methods.findByToken = function (token, cb) {
+userSchema.statics.findByToken = function (token, cb) {
   var user = this
 
   // 토큰을 decode

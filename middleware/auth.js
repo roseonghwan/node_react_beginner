@@ -18,11 +18,11 @@ let auth = (req, res, next) => {
     // index.js에서 token, user을 사용할 수 있게 하기 위해 req에 넣어줌
     req.token = token
     req.user = user
-    // 미들웨어에 갖히기 않기위해 next
+    // 미들웨어에 갖히기 않기 위해 next
     next()
   })
   // 유저가 있으면 인증 ok
   // 유저가 있으면 인증 no
 }
 
-module.export = { auth }
+module.exports = { auth }
