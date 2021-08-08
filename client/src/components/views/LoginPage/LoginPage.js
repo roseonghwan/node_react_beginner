@@ -1,4 +1,3 @@
-import axios from 'axios'
 import React, { useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { loginUser } from '../../../_actions/user_action'
@@ -33,7 +32,7 @@ function LoginPage(props) {
         if (response.payload.loginSuccess) {
           props.history.push('/')
         } else {
-          alert('ERROR!')
+          alert('입력한 정보가 틀립니다.')
         }
 
       })
