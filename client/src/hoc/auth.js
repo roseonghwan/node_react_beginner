@@ -26,7 +26,7 @@ export default function (SpecificComponent, option, adminRoute = null) {
               props.history.push('/login')
             }
           }
-          // 로그인된 상태
+          // 로그인한 상태
           else {
             if (adminRoute && !response.payload.isAuth) {
               props.history.push('/')

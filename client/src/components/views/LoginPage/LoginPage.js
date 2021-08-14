@@ -19,7 +19,7 @@ function LoginPage(props) {
   }
 
   const onSubmitHandler = event => {
-    // 페이지 리프래쉬를 막아줌
+    // 페이지 리프래쉬를 막음
     event.preventDefault();
     let body = {
       email: Email,

@@ -44,7 +44,7 @@ function RegisterPage(props) {
       password: Password
     }
 
-    // redux 사용
+    // redux 이용
     dispatch(registerUser(body))
       .then(response => {
         // 회원가입 성공시 로그인 페이지 이동

@@ -31,7 +31,6 @@ export function registerUser(dataToSubmit) {
 
 export function auth() {
 
-  // 서버에서 받은 데이터를 request에 저장
   const request = axios.get('/api/users/auth')
     .then(response => response.data)
   // return 시켜서 reducer로 보내야 함
