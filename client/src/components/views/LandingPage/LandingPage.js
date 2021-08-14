@@ -30,5 +30,5 @@ function LandingPage(props) {
     </div>
   )
 }
-
+// withRouter 사용
 export default withRouter(LandingPage)

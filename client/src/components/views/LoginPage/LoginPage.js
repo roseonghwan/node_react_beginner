@@ -31,6 +31,7 @@ function LoginPage(props) {
       .then(response => {
         // 로그인 성공시 루트 페이지 이동
         if (response.payload.loginSuccess) {
+          // withRouter을 사용해야 history 사용 가능
           props.history.push('/')
         } else {
           alert('입력한 정보가 틀립니다.')

@@ -8,7 +8,7 @@ export default function (SpecificComponent, option, adminRoute = null) {
   // null -> 아무나 출입이 가능한 페이지
   // true -> 로그인한 유저만 출입이 가능한 페이지
   // false -> 로그인한 유저는 출입이 불가능한 페이지
-  // admin만 출입이 가능한 페이지를 만들땐 마지막 인자를 true로 설정하면 가능
+  // admin만 출입이 가능한 페이지를 만들땐 마지막 인자를 true로 설정
 
   // backend에 request를 보내 현재 사용자의 상태를 가져옴
   function AuthenticationCheck(props) {

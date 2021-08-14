@@ -16,7 +16,7 @@ export default function (previousState = {}, action) {
     case REGISTER_USER:
       return { ...previousState, register: action.payload }
       break;
-
+    //추가
     case AUTH_USER:
       return { ...previousState, userData: action.payload }
       break;
