@@ -49,7 +49,6 @@ function RegisterPage(props) {
       .then(response => {
         // 회원가입 성공시 로그인 페이지 이동
         if (response.payload.success) {
-          // withRouter을 사용해야 history 사용 가능
           props.history.push('/login')
         } else {
           alert('Falied to sign up')
